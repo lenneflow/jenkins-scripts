@@ -49,14 +49,14 @@ pipeline {
                     
                     writeFile file: 'test.md', text: 'This is a test message.'
                     createGitHubRelease(
-                        credentialId: 'f5f2b9de-3117-4386-a3a5-7e67d6d9f91b',
+                        credentialId: 'd351bb43-e86b-40a9-8c40-b14f5b81c28b',
                         repository: 'lenneflow/lenneflow-k8s-api',
                         commitish: 'master',
                         tag: "v$NEW_VERSION",
                         bodyFile: 'test.md'
                     )
                     uploadGithubReleaseAsset(
-                        credentialId: 'f5f2b9de-3117-4386-a3a5-7e67d6d9f91b',
+                        credentialId: 'd351bb43-e86b-40a9-8c40-b14f5b81c28b',
                         repository: 'lenneflow/lenneflow-k8s-api',
                         tagName: "v$NEW_VERSION", 
                         uploadAssets: [
