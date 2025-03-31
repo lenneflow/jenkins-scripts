@@ -1,6 +1,6 @@
 def RELEASE_NAME_PREFIX = "lenneflow-client-"
 def NEW_VERSION = ""
-def VERSION_COMMIT_PREFIX = "Added new Lenneflow client Version:"
+def VERSION_COMMIT_PREFIX = "Added new Lenneflow Client Version:"
 pipeline {
     agent any
     stages {
